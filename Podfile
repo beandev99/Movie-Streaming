@@ -9,5 +9,7 @@ target 'Movie Streaming' do
   pod 'Alamofire'
   pod 'SDWebImage'
   pod 'RealmSwift', '~> 10.28'
+  pod 'Moya', '~> 15.0'
+
 
 end

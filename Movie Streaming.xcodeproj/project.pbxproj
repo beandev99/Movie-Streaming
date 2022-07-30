@@ -16,6 +16,13 @@
 		D79FC10B289519B300BB4FA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79FC109289519B300BB4FA0 /* LaunchScreen.storyboard */; };
 		D79FC11A289521A600BB4FA0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FC118289521A600BB4FA0 /* BaseViewController.swift */; };
 		D79FC11B289521A600BB4FA0 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D79FC119289521A600BB4FA0 /* BaseViewController.xib */; };
+		D79FC11D2895237C00BB4FA0 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FC11C2895237C00BB4FA0 /* BaseError.swift */; };
+		D79FC11F289524A800BB4FA0 /* BaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FC11E289524A800BB4FA0 /* BaseAPIService.swift */; };
+		D79FC122289526B200BB4FA0 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FC121289526B200BB4FA0 /* Configs.swift */; };
+		D79FC124289528B100BB4FA0 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FC123289528B100BB4FA0 /* NetworkProvider.swift */; };
+		D79FC12928952DD200BB4FA0 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FC12828952DD200BB4FA0 /* MovieAPI.swift */; };
+		D79FC12B289531C800BB4FA0 /* MovieAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FC12A289531C800BB4FA0 /* MovieAPIService.swift */; };
+		D79FC12D2895326900BB4FA0 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79FC12C2895326900BB4FA0 /* MovieResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,13 @@
 		D79FC10C289519B300BB4FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D79FC118289521A600BB4FA0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D79FC119289521A600BB4FA0 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		D79FC11C2895237C00BB4FA0 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		D79FC11E289524A800BB4FA0 /* BaseAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIService.swift; sourceTree = "<group>"; };
+		D79FC121289526B200BB4FA0 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		D79FC123289528B100BB4FA0 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		D79FC12828952DD200BB4FA0 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
+		D79FC12A289531C800BB4FA0 /* MovieAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPIService.swift; sourceTree = "<group>"; };
+		D79FC12C2895326900BB4FA0 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		D7D65ED3ABC2E59C90FBF808 /* Pods-Movie Streaming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie Streaming.debug.xcconfig"; path = "Target Support Files/Pods-Movie Streaming/Pods-Movie Streaming.debug.xcconfig"; sourceTree = "<group>"; };
 		F1B563A6502A4BC2FEF890E2 /* Pods_Movie_Streaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_Streaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +98,8 @@
 		D79FC0FD289519B300BB4FA0 /* Movie Streaming */ = {
 			isa = PBXGroup;
 			children = (
+				D79FC12528952B2400BB4FA0 /* Helpers */,
+				D79FC1202895252900BB4FA0 /* Configs */,
 				D79FC1172895217200BB4FA0 /* Base */,
 				D79FC1162895216000BB4FA0 /* ViewModel */,
 				D79FC1152895215800BB4FA0 /* View */,
@@ -104,6 +120,11 @@
 		D79FC1122895210E00BB4FA0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D79FC11C2895237C00BB4FA0 /* BaseError.swift */,
+				D79FC11E289524A800BB4FA0 /* BaseAPIService.swift */,
+				D79FC123289528B100BB4FA0 /* NetworkProvider.swift */,
+				D79FC12828952DD200BB4FA0 /* MovieAPI.swift */,
+				D79FC12A289531C800BB4FA0 /* MovieAPIService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -118,6 +139,7 @@
 		D79FC1142895215100BB4FA0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D79FC12C2895326900BB4FA0 /* MovieResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +165,21 @@
 				D79FC119289521A600BB4FA0 /* BaseViewController.xib */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		D79FC1202895252900BB4FA0 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				D79FC121289526B200BB4FA0 /* Configs.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		D79FC12528952B2400BB4FA0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +299,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D79FC103289519B300BB4FA0 /* ViewController.swift in Sources */,
+				D79FC12D2895326900BB4FA0 /* MovieResponse.swift in Sources */,
+				D79FC12B289531C800BB4FA0 /* MovieAPIService.swift in Sources */,
 				D79FC11A289521A600BB4FA0 /* BaseViewController.swift in Sources */,
 				D79FC0FF289519B300BB4FA0 /* AppDelegate.swift in Sources */,
+				D79FC11D2895237C00BB4FA0 /* BaseError.swift in Sources */,
 				D79FC101289519B300BB4FA0 /* SceneDelegate.swift in Sources */,
+				D79FC124289528B100BB4FA0 /* NetworkProvider.swift in Sources */,
+				D79FC12928952DD200BB4FA0 /* MovieAPI.swift in Sources */,
+				D79FC11F289524A800BB4FA0 /* BaseAPIService.swift in Sources */,
+				D79FC122289526B200BB4FA0 /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
